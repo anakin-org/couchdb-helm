@@ -14,7 +14,7 @@ storage volumes to each Pod in the Deployment.
 ## TL;DR
 
 ```bash
-$ helm repo add couchdb https://apache.github.io/couchdb-helm
+$ helm repo add couchdb https://anakin-org.github.io/couchdb-helm
 $ helm install couchdb/couchdb \
   --set allowAdminParty=true \
   --set couchdbConfig.couchdb.uuid=$(curl https://www.uuidgenerator.net/api/version4 2>/dev/null | tr -d -)
@@ -32,7 +32,7 @@ To install the chart with the release name `my-release`:
 Add the CouchDB Helm repository:
 
 ```bash
-$ helm repo add couchdb https://apache.github.io/couchdb-helm
+$ helm repo add couchdb https://anakin-org.github.io/couchdb-helm
 ```
 
 Afterwards install the chart replacing the UUID
@@ -127,7 +127,7 @@ This chart replaces the `stable/couchdb` chart previously hosted by Helm and con
 version semantics. You can upgrade directly from `stable/couchdb` to this chart using:
 
 ```bash
-$ helm repo add couchdb https://apache.github.io/couchdb-helm
+$ helm repo add couchdb https://anakin-org.github.io/couchdb-helm
 $ helm upgrade my-release couchdb/couchdb
 ```
 
@@ -211,34 +211,4 @@ A variety of other parameters are also configurable. See the comments in the
 | `readinessProbe.successThreshold`    | 1                                      |
 | `readinessProbe.timeoutSeconds`      | 1                                      |
 
-## Feedback, Issues, Contributing
 
-General feedback is welcome at our [user][1] or [developer][2] mailing lists.
-
-Apache CouchDB has a [CONTRIBUTING][3] file with details on how to get started
-with issue reporting or contributing to the upkeep of this project. In short,
-use GitHub Issues, do not report anything on Docker's website.
-
-## Non-Apache CouchDB Development Team Contributors
-
-- [@natarajaya](https://github.com/natarajaya)
-- [@satchpx](https://github.com/satchpx)
-- [@spanato](https://github.com/spanato)
-- [@jpds](https://github.com/jpds)
-- [@sebastien-prudhomme](https://github.com/sebastien-prudhomme)
-- [@stepanstipl](https://github.com/sebastien-stepanstipl)
-- [@amatas](https://github.com/amatas)
-- [@Chimney42](https://github.com/Chimney42)
-- [@mattjmcnaughton](https://github.com/mattjmcnaughton)
-- [@mainephd](https://github.com/mainephd)
-- [@AdamDang](https://github.com/AdamDang)
-- [@mrtyler](https://github.com/mrtyler)
-- [@kevinwlau](https://github.com/kevinwlau)
-- [@jeyenzo](https://github.com/jeyenzo)
-- [@Pinpin31.](https://github.com/Pinpin31)
-
-[1]: http://mail-archives.apache.org/mod_mbox/couchdb-user/
-[2]: http://mail-archives.apache.org/mod_mbox/couchdb-dev/
-[3]: https://github.com/apache/couchdb/blob/master/CONTRIBUTING.md
-[4]: https://docs.couchdb.org/en/stable/config/index.html
-[5]: https://docs.couchdb.org/en/latest/setup/cluster.html#preparing-couchdb-nodes-to-be-joined-into-a-cluster
