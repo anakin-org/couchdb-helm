@@ -1,0 +1,26 @@
+apiVersion: v1
+entries:
+  couchdb:
+  - apiVersion: v1
+    appVersion: 3.1.0
+    created: "2022-08-22T18:33:48.195447508+05:30"
+    description: A database featuring seamless multi-master sync, that scales from big data to mobile, with an intuitive HTTP/JSON API and designed for reliability.
+    digest: 360bc905d1123f3177298e55733c82a914b90cbae74b520ee50b98ccc9fdad7a
+    home: https://couchdb.apache.org/
+    icon: http://couchdb.apache.org/CouchDB-visual-identity/logo/CouchDB-couch-symbol.svg
+    keywords:
+    - couchdb
+    - database
+    - nosql
+    maintainers:
+    - email: kocolosk@apache.org
+      name: kocolosk
+    - email: willholley@apache.org
+      name: willholley
+    name: couchdb
+    sources:
+    - https://github.com/apache/couchdb-docker
+    urls:
+    - https://anakin-org.github.io/couchdb-helm/couchdb-3.3.4.tgz
+    version: 3.3.4
+generated: "2022-08-22T18:33:48.19421347+05:30"
